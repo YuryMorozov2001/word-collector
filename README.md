@@ -1,20 +1,27 @@
 # word_collector
 
 This package adds an easy to use and beautiful word collector widget 
+
 <img src="https://github.com/YuryMorozov2001/word-collector/raw/main/.gitHub/images/word_collector_preview.gif" alt="preview">  
 
 ## Getting started
 
-### Add dependency 
+### Add dependency
 
 ```yaml
 dependencies:
-  word_collector: ^
+  word_collector:
+```
+
+### Add package import
+
+```dart
+import 'package:word_collector/word_collector.dart';
 ```
 
 ## Usage 
 
-### Step 1:
+### Step 1
 Prepare a `Map<int, List<String>>` with the words:
 
 ```dart
@@ -26,7 +33,7 @@ final words = <int, List<String>>{
     }; 
 ```
 
-### Step 2:
+### Step 2
 
 Create a `WordCollectorController()`:
 
@@ -34,7 +41,7 @@ Create a `WordCollectorController()`:
 final wordCController = WordCollectorController();
 ```
 
-### Step 3:
+### Step 3
 
 Create a `PageView`:
 
